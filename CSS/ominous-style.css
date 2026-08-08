@@ -1,32 +1,31 @@
+@font-face {
+  font-family: "8bitoperator JVE Regular";
+  src: url("../Assets/Fonts/8bitoperator_jve.ttf") format("truetype");
+}
+
 body {
   background-color: black;
   color: white;
-  font-family: "8bitoperator JVE Regular", "Comic Sans MS";
+  font-family: "8bitoperator JVE Regular", "Comic Sans MS", monospace;
   
-  /* Centrado general */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   margin: 0;
-  overflow: hidden; /* Evita que salgan barras de scroll raras */
+  overflow: hidden; 
 }
 
-/* LA PANTALLA DEL JUEGO */
 .game-container {
   position: relative;
-  /* Mantiene SIEMPRE la proporción de tus imágenes originales (640x480) */
   aspect-ratio: 640 / 480; 
   
-  /* Escala hasta ocupar el 90% del ancho, pero NUNCA se sale de la altura de la pantalla */
   width: 90vw;
   max-width: calc(80vh * (640 / 480));
   
-  /* AQUÍ LO SUBIMOS "UN POCO MÁS ARRIBITA". Aumenta este número para subirlo más */
   margin-bottom: 10vh; 
   
-  /* Esto nos permite usar la unidad 'cqw' para escalar el texto */
   container-type: inline-size; 
 }
 
@@ -48,23 +47,89 @@ img {
 
 .dialog {
   position: absolute;
-  background-color: black;
-  /* Nezumi, sí llegas a tener alguna duda sobre esto, avisame. */
-  width: 78%;      
-  height: 21%;     
+  background-image: url("../Assets/Images/box.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
   
-  bottom: 0%;      
-  left: 11%;       /* 11% + 78% + 11% = 100% al centro */
+  width: 88%;      
+  height: 28%;     
   
-  /* 'cqw' para que el borde crezca y se encoja */
-  border: 0.5cqw solid white; 
+  bottom: -10%;      
+  left: 6%;      
+  
   box-sizing: border-box;
   
-  /* la fuente del div de game-container */
-  font-size: 2.5cqw; 
+  font-size: 3.5cqw; 
 }
 
 .dialog p {
-  /* Los márgenes también escalan :3 */
-  margin: 1cqw 2cqw;
+  margin: 1.5cqw 2.5cqw;
+}
+
+.tree > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tree .one {
+  animation: figure-eight-soft 8s ease-in-out infinite;
+}
+
+.tree .two {
+  animation: figure-eight-strong 6s ease-in-out infinite;
+}
+
+@keyframes figure-eight-soft {
+  0% { transform: translate(0, 0); }
+  12.5% { transform: translate(0.5%, 0.25%); }
+  25% { transform: translate(1%, 0); }
+  37.5% { transform: translate(0.5%, -0.25%); }
+  50% { transform: translate(0, 0); }
+  62.5% { transform: translate(-0.5%, 0.25%); }
+  75% { transform: translate(-1%, 0); }
+  87.5% { transform: translate(-0.5%, -0.25%); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes figure-eight-strong {
+  0% { transform: translate(0, 0); }
+  12.5% { transform: translate(1%, 0.5%); }
+  25% { transform: translate(2%, 0); }
+  37.5% { transform: translate(1%, -0.5%); }
+  50% { transform: translate(0, 0); }
+  62.5% { transform: translate(-1%, 0.5%); }
+  75% { transform: translate(-2%, 0); }
+  87.5% { transform: translate(-1%, -0.5%); }
+  100% { transform: translate(0, 0); }
+}
+
+.tree .three {
+  transform-origin: 50% 40%;
+  animation: falling-leaf-fluid 6s ease-in-out infinite;
+}
+
+@keyframes falling-leaf-fluid {
+  0% { 
+    transform: translate(0, 0) scale(0.03); 
+    opacity: 0; 
+  }
+  15% { 
+    transform: translate(4%, 2%) scale(0.03); 
+    opacity: 1; 
+  }
+  45% { 
+    transform: translate(14%, 6%) scale(0.03); 
+  }
+  75% { 
+    transform: translate(22%, 14%) scale(0.03); 
+    opacity: 1; 
+  }
+  100% { 
+    transform: translate(28%, 20%) scale(0.03); 
+    opacity: 0; 
+  }
 }
