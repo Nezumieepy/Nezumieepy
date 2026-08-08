@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  color: white;
+  
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-family: MS Gothic;
+  font-size: 32px;
+  src: url("../Assets/Fonts/Gothic.ttf");
+}
+
+.NotFound {
+  text-align: center;
+  line-height: 10px;
+}
+

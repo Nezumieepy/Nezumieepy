@@ -1,0 +1,61 @@
+body {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  
+  background-image: url('../Assets/Images/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: gray;
+  
+  color: #e2d3da;
+  font-family: Unifont;
+  font-size: 16px;
+  src: url("../Assets/Fonts/Unifont.ttf");
+  
+}
+
+.wea {
+  background-color: #141622;
+  color: #e2d3da;
+  border: 3px solid #38394b;
+  padding: 3px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 550px;
+}
+
+.wea:hover {
+  border: 3px solid #ed8da8;
+}
+
+.logobutton a{
+  width: 100%;
+}
+.logobutton a:hover{
+  width: 125%;
+}
+
+.topbar {
+  background-color: #141622;
+  border: 2px solid #38394b;
+  color: #e2d3da;
+  height: 30px;
+}
+
+.topbar p{
+  margin: 6px 6px;
+  height: 0px;
+}
+
+.topbar a{
+  background-color: #141622;
+  color: #e2d3da;
+}
+
+.topbar a:hover{
+  background-color: #38394b;
+  color: #ed8da8;
+}
