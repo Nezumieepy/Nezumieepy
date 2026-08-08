@@ -1,23 +1,70 @@
 body {
   background-color: black;
   color: white;
-  
   font-family: "8bitoperator JVE Regular", "Comic Sans MS";
-  src: url("../Assets/Fonts/8bitoperator_jve.ttf"),
-  url("../Assets/Fonts/COMIC.TTF"),
-  url("../Assets/Fonts/unifont-17.0.04.otf");
-  font-size: 32px;
+  
+  /* Centrado general */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden; /* Evita que salgan barras de scroll raras */
 }
 
-.NotFound {
-  text-align: center;
-  line-height: 10px;
+/* LA PANTALLA DEL JUEGO */
+.game-container {
+  position: relative;
+  /* Mantiene SIEMPRE la proporción de tus imágenes originales (640x480) */
+  aspect-ratio: 640 / 480; 
+  
+  /* Escala hasta ocupar el 90% del ancho, pero NUNCA se sale de la altura de la pantalla */
+  width: 90vw;
+  max-width: calc(80vh * (640 / 480));
+  
+  /* AQUÍ LO SUBIMOS "UN POCO MÁS ARRIBITA". Aumenta este número para subirlo más */
+  margin-bottom: 10vh; 
+  
+  /* Esto nos permite usar la unidad 'cqw' para escalar el texto */
+  container-type: inline-size; 
+}
+
+.arbolqlia {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   position: absolute;
-  width: 640px;
-  height: 480px;
   image-rendering: pixelated;
+}
+
+.dialog {
+  position: absolute;
+  background-color: black;
+  
+  width: 78%;      
+  height: 21%;     
+  
+  bottom: 0%;      
+  left: 11%;       /* 11% + 78% + 11% = 100% al centro */
+  
+  /* 'cqw' para que el borde crezca y se encoja */
+  border: 0.5cqw solid white; 
+  box-sizing: border-box;
+  
+  /* la fuente del div de game-container */
+  font-size: 2.5cqw; 
+}
+
+.dialog p {
+  /* Los márgenes también escalan :3 */
+  margin: 1cqw 2cqw;
 }
