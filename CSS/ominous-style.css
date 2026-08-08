@@ -49,7 +49,7 @@ img {
 .dialog {
   position: absolute;
   background-color: black;
-  
+  /* Nezumi, sí llegas a tener alguna duda sobre esto, avisame. */
   width: 78%;      
   height: 21%;     
   
