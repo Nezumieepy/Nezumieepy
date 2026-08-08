@@ -14,7 +14,8 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  overflow: hidden; 
+  overflow: hidden;
+  cursor: url('../Assets/Images/SOUL.png'),auto; 
 }
 
 .game-container {
@@ -76,34 +77,34 @@ img {
 }
 
 .tree .one {
-  animation: figure-eight-soft 8s ease-in-out infinite;
+  animation: figure-eight-soft 16s linear infinite;
 }
 
 .tree .two {
-  animation: figure-eight-strong 6s ease-in-out infinite;
+  animation: figure-eight-strong 16s linear infinite;
 }
 
 @keyframes figure-eight-soft {
   0% { transform: translate(0, 0); }
-  12.5% { transform: translate(0.5%, 0.25%); }
-  25% { transform: translate(1%, 0); }
-  37.5% { transform: translate(0.5%, -0.25%); }
+  12.5% { transform: translate(0.1%, 0.2%); }
+  25% { transform: translate(0.2%, 0); }
+  37.5% { transform: translate(0.1%, -0.2%); }
   50% { transform: translate(0, 0); }
-  62.5% { transform: translate(-0.5%, 0.25%); }
-  75% { transform: translate(-1%, 0); }
-  87.5% { transform: translate(-0.5%, -0.25%); }
+  62.5% { transform: translate(-0.1%, 0.2%); }
+  75% { transform: translate(-0.2%, 0); }
+  87.5% { transform: translate(-0.1%, -0.2%); }
   100% { transform: translate(0, 0); }
 }
 
 @keyframes figure-eight-strong {
   0% { transform: translate(0, 0); }
-  12.5% { transform: translate(1%, 0.5%); }
-  25% { transform: translate(2%, 0); }
-  37.5% { transform: translate(1%, -0.5%); }
+  12.5% { transform: translate(0.2%, 0.1%); }
+  25% { transform: translate(0, 0.2%); }
+  37.5% { transform: translate(-0.2%, 0.1%); }
   50% { transform: translate(0, 0); }
-  62.5% { transform: translate(-1%, 0.5%); }
-  75% { transform: translate(-2%, 0); }
-  87.5% { transform: translate(-1%, -0.5%); }
+  62.5% { transform: translate(0.2%, -0.1%); }
+  75% { transform: translate(0, -0.2%); }
+  87.5% { transform: translate(-0.2%, -0.1%); }
   100% { transform: translate(0, 0); }
 }
 
