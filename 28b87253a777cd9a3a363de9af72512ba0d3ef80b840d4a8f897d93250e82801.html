@@ -5,33 +5,38 @@
     <title>There's a man Behind that tree.</title>
     <link href="CSS/ominous-style.css" rel="stylesheet" type="text/css" media="all">
     <style>
-      .hallway{
-        display: flex;
-        width: 50%;
-        height: 50%;
-        object-fit: cover;
-        position: absolute;
-        left: 40vw;
-      }
       
-      .tree{
-        display: flex;
-        width: 50%;
-        height: 50%;
-        object-fit: cover;
-        position: absolute;
-        left: 40vw;
-      }      
     </style>
   </head>
   <body>
-    <div class="hallway">
-      <img src="Assets/Images/hallway.png">
-    </div>
+    <div class="arbolqlia">
+      <div class="hallway">
+        <img src="Assets/Images/hallway.png">
+      </div>
     
-    <div class="tree">
-      <img src="Assets/Images/tree1.png">
+      <div class="tree">
+        <img src="Assets/Images/tree1.png">
+        <div class="1"><img src="Assets/Images/tree3.png"></div>
+        <div class="2"><img src="Assets/Images/tree4.png"></div>
+        <div class="3"><img src="Assets/Images/leaf.png"></div>
+      </div>
+
+      <div class="dialog" style="
+        font-size: 16px;
+        width: 500px;
+        height: 100px;
+        background-color: black;
+        border: 3px solid white;
+        position: absolute;
+        top: 67vh;
+        left: abs(calc(50vw - 250px));
+      "><p style="margin: 6px 12px;">
+          * (Ok, this dialog slop is ass, ngl)<br>
+          * (You received an Egg.)
+        </p>
+      </div>
     </div>
+
     
     <audio autoplay loop>
       <source src="https://file.garden/aVECfYTeq1KuKSbP/eggroomchap5.ogg" type="audio/ogg">
