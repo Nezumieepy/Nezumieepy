@@ -1,8 +1,9 @@
 body {
   margin: auto;
+  margin-top: 46px;
   text-align: center;
   align-items: center;
-  
+
   background-image: url('../Assets/Images/bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -39,15 +40,25 @@ body {
 }
 
 .topbar {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  justify-content: space-between;
+  height: 30px;
+  width: calc(100vw - 3px);
+
+  .centerstuff{
+    position: absolute;
+  }
+
   background-color: #141622;
   border: 2px solid #38394b;
   color: #e2d3da;
-  height: 30px;
 }
 
 .topbar p{
   margin: 6px 6px;
-  height: 0px;
+  max-width: max-content;
 }
 
 .topbar a{
