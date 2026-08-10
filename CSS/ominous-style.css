@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "8bitoperator JVE Regular";
+  font-family: "8bitoperator JVE";
   src: url("../Assets/Fonts/8bitoperator_jve.ttf") format("truetype");
 }
 
 body {
   background-color: black;
   color: white;
-  font-family: "8bitoperator JVE Regular", "Comic Sans MS", monospace;
+  font-family: "8bitoperator JVE", "Comic Sans MS", monospace;
   
   display: flex;
   flex-direction: column;
@@ -60,12 +60,13 @@ img {
   left: 6%;      
   
   box-sizing: border-box;
-  
-  font-size: 3.5cqw; 
 }
 
 .dialog p {
-  margin: 1.5cqw 2.5cqw;
+  margin: 3cqw 5cqw;
+  font-size: 4cqw;
+  line-height: 5cqw;
+  letter-spacing: 0.35cqw;
 }
 
 .tree > div {
