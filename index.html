@@ -21,6 +21,10 @@
         </a><a
         href="https://nezumieepy.neocities.org/placeholder"
         class="topbar-btn"
+        >Resources
+        </a><a
+        href="https://nezumieepy.neocities.org/placeholder"
+        class="topbar-btn"
         >Projects
         </a><a
         href="https://nezumieepy.neocities.org/placeholder"
@@ -32,9 +36,27 @@
         >Art</a>
         <span class="topbar-separators"></span>
         <img
+        id="musiclog"
+        onclick="playsong()"
         src="Assets/Images/musiclog.png"
         style="transform: translateY(2px); image-rendering: pixelated;"
         >
+        <script>
+          const bgm = new Audio("Assets/Audios/g.ogg");
+          var element = document.getElementById('musiclog');
+          bgm.play();
+          if(bgm.paused)
+            element.style.opacity = "0.5";
+          function playsong(){
+            if(bgm.paused){
+              bgm.play();
+              element.style.opacity = "1";
+            } else {
+              bgm.pause();
+              element.style.opacity = "0.5";
+            }
+          }
+        </script>
       </div>
 
       <div class="rightstuff">
@@ -92,7 +114,7 @@
 
     </div>
 
-    <div class="wea">
+    <div class="wea" id="main">
       <img
         src="Assets/Images/wordart.png"
         alt="ok well yea"
@@ -122,6 +144,10 @@
           ></a>
         </div>
       </p>
+    </div>
+
+    <div class="wea" id="socials" style="flex-direction: column;">
+      <img src="Assets/Images/wordart(1).png" alt="ok well yea" style="width: 80%">
     </div>
   
   </body>

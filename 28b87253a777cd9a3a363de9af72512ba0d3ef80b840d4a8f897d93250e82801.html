@@ -21,17 +21,27 @@
         <div class="tree">
           <img src="Assets/Images/tree1.png" />
           <div class="one"><img src="Assets/Images/tree3.png" /></div>
-          <div class="two"><img src="Assets/Images/tree4.png" /></div>
+          <div class="two"><img onclick="dialogslop()" src="Assets/Images/tree4.png" /></div>
           <div class="three"><img src="Assets/Images/leaf.webp" /></div>
         </div>
       </div>
 
-      <div class="dialog">
-        <p>
+
+      <div class="dialog" id="dialogbox">
+        <p id='dialogstext'>
           * (Ok, this dialog slop is ass, ngl)<br />
           * (You received an Egg.)
         </p>
       </div>
+      
+      <script>
+            var dialogbox = document.getElementById('dialogbox');
+            var dialogstext = document.getElementById('dialogstext');
+            dialogbox.style.opacity = "0";
+            function dialogslop() {
+              dialogbox.style.opacity = "1";
+            }
+      </script>
 
     </div>
 

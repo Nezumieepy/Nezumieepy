@@ -9,7 +9,7 @@
   --text-color: #e2d3da;
   --accent-pink: #ed8da8;
 }
-
+  
 * {
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: unset;
@@ -19,6 +19,7 @@
 
 body {
   display: flex;
+  flex-wrap: wrap;
   margin: auto;
   margin-top: 36px;
   text-align: center;
@@ -36,6 +37,11 @@ body {
   -moz-osx-font-smoothing: unset;
   font-smooth: never;
   text-rendering: optimizeSpeed;
+  cursor: url('../Assets/Images/cursor.png'),auto;
+}
+
+a {
+  cursor: url('../Assets/Images/yo.png'),pointer;
 }
 
 .wea {
@@ -43,8 +49,7 @@ body {
   color: var(--text-color);
   border: 3px solid var(--border-color);
   padding: 3px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 10px;
   max-width: 550px;
 }
 
@@ -120,7 +125,7 @@ body {
 }
 
 .topbar .leftstuff img:active{
-  animation: popup 0.2s ease-out;
+  animation: popup 0.1s linear;
 }
 
 .topbar-btn {
@@ -133,7 +138,7 @@ body {
   position: relative;
   transition: background-color 0.2s;
   border: none;
-  cursor: pointer;
+  cursor: url('../Assets/Images/yo.png');
 }
 
 .topbar-btn::after {
