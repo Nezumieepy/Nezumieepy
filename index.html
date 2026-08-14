@@ -44,7 +44,8 @@
         <script>
           const bgm = new Audio("Assets/Audios/g.ogg");
           var element = document.getElementById('musiclog');
-          bgm.play();
+          bgm.autoplay = true;
+          bgm.loop = true;
           if(bgm.paused)
             element.style.opacity = "0.5";
           function playsong(){
@@ -116,21 +117,23 @@
 
     <div class="wea" id="main">
       <img
-        src="Assets/Images/wordart.png"
+        src="Assets/Images/Nezumieepycom-Nezumieepycom.png"
         alt="ok well yea"
-        style="width: 80%"
+        style="width: 100%"
       />
       <p>
-        Hiihhihi, im <span style="color: #ed8da8;">Nezumieepy</span> a lil artist thats has the same
-        height as a rat, has the same size as a rat, has the same weight as a
-        rat, and has the same looks as a rat. a Rat.
+        Hiihhihi, im <span style="color: #ed8da8;">Nezumieepy</span> a lil artist thats has the same height as a rat, has the same size as a rat, same weight as a rat, and has the same looks as a rat. a <img src="Assets/Images/rata.png" style="
+          width: 16px;
+          height: 16px;
+          image-rendering: pixelated;
+          transform: translateY(2px);
+          "></p>
       </p>
       <p>
-        I also recently have been doing coding for fun and have been considering
-        it as my second hobby, since early childhood i really liked computers,
-        and i think its really fitting for me to like it, its filled with
-        puzzles that you have to solve and it always entertains me, somehow, i
-        love it :DDD
+        This is my personal website for i and you to look at my legacy and also the things that i do like drawings and coding along with where i would post it and a bunch of other stuff, this is really just to introduce myself and a sandbox for me to do experiment at my own every once in a while, i hope you enjoy it as much as i enjoyed making it :DD
+      </p>
+      <p>
+        at the moment id really wish i could add an guestbook but i still have no idea how to make one of my own, so for now if you want, u can contact me via <span style="color: #ed8da8;">Email: Nezumieepy@proton.me</span>
       </p>
       <h1>THIS WEBSITE IS STILL A WIP AND IT WILL BE CONSTANTLY BE UPDATED</h1>
         <p>
@@ -146,9 +149,16 @@
       </p>
     </div>
 
-    <div class="wea" id="socials" style="flex-direction: column;">
-      <img src="Assets/Images/wordart(1).png" alt="ok well yea" style="width: 80%">
+    <div class="wea" id="aboutme">
+      <img src="Assets/Images/WordArt-Aboutme.png" alt="ok well yea" style="width: 100%">
+    </div>
+
+    <div class="wea" id="socials">
+      <img src="Assets/Images/wordart(1).png" alt="ok well yea" style="width: 100%">
     </div>
   
+    <div class="wea" id="socials">
+      <img src="Assets/Images/wordart(1).png" alt="ok well yea" style="width: 100%">
+    </div>
   </body>
 </html>
